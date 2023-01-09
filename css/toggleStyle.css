@@ -16,7 +16,7 @@
     -10px -10px 20px 0 rgba(255, 255, 255, 0.5);
   appearance: none;
   cursor: pointer;
-  transition: all 500ms ease-in-out;
+  transition: all 300ms ease-in-out;
   outline: none;
 }
 
@@ -30,7 +30,7 @@
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 1px 1px 10px 0 #5ab9ea inset, -5px -5px 20px 0 #5ab9ea inset;
-  transition: all 750ms ease-in-out;
+  transition: all 450ms ease-in-out;
   pointer-events: none;
 }
 

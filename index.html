@@ -18,9 +18,33 @@
     <title>Toggle Button Generator</title>
   </head>
   <body>
+    <section class="code-block" id="codeBlock">
+      <main class="container">
+        <section class="code-container">
+          <nav>
+            <ul class="tab-links">
+              <li class="active">HTML</li>
+              <li>CSS</li>
+            </ul>
+          </nav>
+          <div class="code"></div>
+        </section>
+      </main>
+    </section>
     <h1>Toggle Button Generator</h1>
     <main class="container">
       <section class="flex-between">
+        <div class="toggle-container">
+          <div class="flex-center row-1">
+            <label class="toggle-btn-1 toggle">
+              <input type="checkbox" />
+              <span class="circle"></span>
+            </label>
+          </div>
+          <div class="row-2 flex-center">
+            <button class="view-btn btn">View Code</button>
+          </div>
+        </div>
         <div class="toggle-container">
           <div class="flex-center row-1">
             <label class="toggle-btn-1">
@@ -28,24 +52,34 @@
               <span class="circle"></span>
             </label>
           </div>
-          <div class="row-2">
+          <div class="row-2 flex-center">
             <button class="view-btn btn">View Code</button>
-            <button class="visit-btn btn">Visit</button>
           </div>
         </div>
-        <div class="toggle-container flex-center">
-          <label class="toggle-btn-1">
-            <input type="checkbox" />
-            <span class="circle"></span>
-          </label>
+        <div class="toggle-container">
+          <div class="flex-center row-1">
+            <label class="toggle-btn-1">
+              <input type="checkbox" />
+              <span class="circle"></span>
+            </label>
+          </div>
+          <div class="row-2 flex-center">
+            <button class="view-btn btn">View Code</button>
+          </div>
         </div>
-        <div class="toggle-container flex-center">
-          <label class="toggle-btn-1">
-            <input type="checkbox" />
-            <span class="circle"></span>
-          </label>
+        <div class="toggle-container">
+          <div class="flex-center row-1">
+            <label class="toggle-btn-1">
+              <input type="checkbox" />
+              <span class="circle"></span>
+            </label>
+          </div>
+          <div class="row-2 flex-center">
+            <button class="view-btn btn">View Code</button>
+          </div>
         </div>
       </section>
     </main>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
