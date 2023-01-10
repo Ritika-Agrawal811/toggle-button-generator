@@ -1,10 +1,10 @@
 data = {
   "toggle-btn-1": {
     html: [
-      "<label class='toggle-btn-1 toggle'>",
-      "<input type='checkbox' />",
-      "<span class='circle'></span>",
-      "</label>",
+      "&lt;label class='toggle-btn-1 toggle'&gt;",
+      "&lt;input type='checkbox' /&gt;",
+      "&lt;span class='circle'&gt;&lt;/span&gt;",
+      "&lt;/label&gt;",
     ],
 
     css: [

@@ -80,6 +80,8 @@ h1 {
   height: 500px;
   border: 3px solid #7a8b8b;
   background-color: #fff;
+  overflow-y: scroll;
+  padding: 1em 2em;
 }
 
 .tab-links {
@@ -143,7 +145,7 @@ main {
   font-size: 1.15rem;
   text-transform: capitalize;
   padding: 0.5em 1em;
-  border-radius: 0.25em;
+  border-radius: 0.45em;
   font-weight: 700;
   transition: all 150ms ease-in-out;
 }
@@ -152,6 +154,7 @@ main {
   width: 80%;
   background-color: #2da44e;
   color: #fff;
+  padding: 0.75em 1em;
 }
 
 .view-btn:hover,
@@ -262,5 +265,10 @@ main {
     right: 0.5em;
     top: 0.5em;
     font-size: 1.5rem;
+  }
+
+  .code-container .code {
+    overflow: scroll;
+    padding: 0.5em 1em;
   }
 }
