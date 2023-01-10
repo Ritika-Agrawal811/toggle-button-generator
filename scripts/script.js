@@ -81,8 +81,11 @@ function showCode(codeType, toggleName) {
 // function to copy code
 
 const copyToClipboard = (str) => {
-  if (navigator && navigator.clipboard && navigator.clipboard.writeText)
+  if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+    alert("code copied successfully!");
     return navigator.clipboard.writeText(str);
+  }
+
   return Promise.reject("The Clipboard API is not available.");
 };
 

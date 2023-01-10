@@ -18,7 +18,7 @@ h1 {
 
 .flex-between {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -93,6 +93,7 @@ h1 {
   padding: 0.75em;
   background-color: #efefef;
   cursor: pointer;
+  user-select: none;
 }
 
 .tab-links li.active {
