@@ -19,22 +19,26 @@
   </head>
   <body>
     <section class="code-block" id="codeBlock">
+      <div id="close-btn"><i class="fa-regular fa-circle-xmark"></i></div>
       <main class="container">
         <section class="code-container">
           <nav>
             <ul class="tab-links">
-              <li class="active">HTML</li>
-              <li>CSS</li>
+              <li class="active" data-code="html">HTML</li>
+              <li data-code="css">CSS</li>
             </ul>
           </nav>
           <div class="code"></div>
+          <div class="copy-btn-container">
+            <button class="btn copy-btn">Copy Code</button>
+          </div>
         </section>
       </main>
     </section>
     <h1>Toggle Button Generator</h1>
     <main class="container">
       <section class="flex-between">
-        <div class="toggle-container">
+        <div class="toggle-container" data-toggle-name="toggle-btn-1">
           <div class="flex-center row-1">
             <label class="toggle-btn-1 toggle">
               <input type="checkbox" />
@@ -80,6 +84,7 @@
         </div>
       </section>
     </main>
-    <script src="scripts/script.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
   </body>
 </html>

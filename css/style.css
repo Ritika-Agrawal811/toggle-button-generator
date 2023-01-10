@@ -11,7 +11,7 @@ body {
 h1 {
   font-size: 3rem;
   text-align: center;
-  margin: 1.5em 0;
+  margin: 1.15em 0;
   position: relative;
   z-index: 10;
 }
@@ -46,11 +46,24 @@ h1 {
 }
 
 .code-block main {
-  top: 200px;
+  top: 165px;
   display: none;
 }
 
 .code-block.open main {
+  display: block;
+}
+
+#close-btn {
+  position: absolute;
+  right: 2em;
+  top: 1em;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.code-block.open #close-btn {
   display: block;
 }
 
@@ -60,29 +73,35 @@ h1 {
   position: relative;
   width: 60%;
   left: 40%;
+  box-shadow: 0 0 5px #aaa, 0 0 1em #dedede;
 }
 
 .code-container .code {
   height: 500px;
-  border: 5px solid #7a8b8b;
-  border-radius: 0 0 0.75em 0.75em;
+  border: 3px solid #7a8b8b;
   background-color: #fff;
 }
 
 .tab-links {
   display: flex;
-  background-color: #e7e6dd;
+  background-color: #efefef;
 }
 .tab-links li {
   font-size: 1.15rem;
   padding: 0.75em;
-  background-color: #e7e6dd;
+  background-color: #efefef;
   cursor: pointer;
 }
 
 .tab-links li.active {
   background-color: #7a8b8b;
   color: #fff;
+}
+
+.copy-btn-container {
+  background-color: #efefef;
+  padding: 0.5em;
+  border-radius: 0 0 0.75em 0.75em;
 }
 
 /*  toggle containers */
@@ -124,7 +143,7 @@ main {
   font-size: 1.15rem;
   text-transform: capitalize;
   padding: 0.5em 1em;
-  border-radius: 1em;
+  border-radius: 0.25em;
   font-weight: 700;
   transition: all 150ms ease-in-out;
 }
@@ -135,8 +154,14 @@ main {
   color: #fff;
 }
 
-.view-btn:hover {
+.view-btn:hover,
+.copy-btn:hover {
   background-color: #2f8748;
+}
+
+.copy-btn {
+  background-color: #2da44e;
+  color: #fff;
 }
 
 /* added via JS */
@@ -224,11 +249,18 @@ main {
   }
 
   .code-block main {
-    top: 530px;
+    top: 500px;
     display: none;
   }
 
   .toggle-container.show .toggle {
     transform: scale(1.15);
+  }
+
+  #close-btn {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    font-size: 1.5rem;
   }
 }
