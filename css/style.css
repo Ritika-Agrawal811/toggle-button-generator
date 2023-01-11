@@ -3,9 +3,8 @@ body {
 }
 
 .container {
-  width: min(95%, 1500px);
+  width: min(95%, 1200px);
   margin: 0 auto;
-  /* border: 2px solid red; */
 }
 
 h1 {
@@ -199,10 +198,7 @@ main {
   }
 
   .toggle-container.show {
-    left: 0;
-    top: 0;
     width: 100%;
-    height: 450px;
     height: 250px;
   }
 
@@ -240,10 +236,7 @@ main {
   }
 
   .toggle-container.show {
-    left: 0;
-    top: 0;
     width: 100%;
-    height: 450px;
     height: 250px;
   }
 
@@ -262,7 +255,7 @@ main {
   }
 
   .toggle-container.show .toggle {
-    transform: scale(1.15);
+    transform: scale(1.05);
   }
 
   #close-btn {
