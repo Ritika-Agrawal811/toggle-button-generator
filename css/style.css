@@ -11,7 +11,7 @@ body {
 h1 {
   font-size: 2.25rem;
   text-align: center;
-  margin: 2em 0;
+  margin: 1em 0;
   position: relative;
   z-index: 10;
 }
@@ -173,7 +173,7 @@ main {
 .toggle-container.show {
   z-index: 10;
   left: 3em;
-  top: 0;
+  top: 120px;
   width: 33%;
   height: 430px;
   margin: 0;
@@ -236,7 +236,7 @@ main {
   }
 
   .row-2 {
-    height: 80px;
+    height: 75px;
   }
 
   .toggle-container.show {
