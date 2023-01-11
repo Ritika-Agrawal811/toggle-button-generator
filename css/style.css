@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   margin: 1.15em 0;
   position: relative;
@@ -42,11 +42,11 @@ h1 {
 }
 
 .code-block.open {
-  height: 120vh;
+  height: 100vh;
 }
 
 .code-block main {
-  top: 165px;
+  top: 150px;
   display: none;
 }
 
@@ -77,7 +77,7 @@ h1 {
 }
 
 .code-container .code {
-  height: 500px;
+  height: 450px;
   border: 3px solid #7a8b8b;
   background-color: #fff;
   overflow-y: scroll;
@@ -90,7 +90,7 @@ h1 {
 }
 .tab-links li {
   font-size: 1.15rem;
-  padding: 0.75em;
+  padding: 0.65em;
   background-color: #efefef;
   cursor: pointer;
   user-select: none;
@@ -114,8 +114,8 @@ main {
 }
 
 .toggle-container {
-  width: min(90%, 320px);
-  height: 300px;
+  width: min(90%, 300px);
+  height: 280px;
   border-radius: 0.75em;
   margin: 1em;
   box-shadow: 0 0 5px #aaa, 0 0 1em #dedede;
@@ -130,20 +130,20 @@ main {
 }
 
 .row-1 {
-  height: 220px;
+  height: 210px;
 }
 
 .row-2 {
   background-color: #efefef;
   border-radius: 0 0 0.75em 0.75em;
-  height: 74px;
+  height: 64px;
   display: flex;
   align-items: center;
   padding: 1em;
 }
 
 .btn {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   text-transform: capitalize;
   padding: 0.5em 1em;
   border-radius: 0.45em;
@@ -174,8 +174,8 @@ main {
   z-index: 10;
   left: 3em;
   top: 0;
-  width: 35%;
-  height: 450px;
+  width: 33%;
+  height: 430px;
   margin: 0;
   position: absolute;
 }
@@ -189,7 +189,7 @@ main {
 }
 
 .toggle-container.show .toggle {
-  transform: scale(1.25);
+  transform: scale(1.2);
 }
 
 @media (max-width: 1024px) {
@@ -249,7 +249,7 @@ main {
   }
 
   .code-block.open {
-    height: 200vh;
+    height: 150vh;
   }
 
   .code-block main {
