@@ -82,7 +82,6 @@ function showCode(codeType, toggleName) {
 
 const copyToClipboard = (str) => {
   if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
-    alert("code copied successfully!");
     return navigator.clipboard.writeText(str);
   }
 
@@ -90,5 +89,7 @@ const copyToClipboard = (str) => {
 };
 
 function copyCodeBlock() {
-  copyToClipboard(toggleCode.textContent);
+  if (copyToClipboard(toggleCode.textContent)) {
+    alert("code copied successfully!");
+  }
 }
