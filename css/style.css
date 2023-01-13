@@ -264,7 +264,7 @@ footer p {
   }
 
   .toggle-container {
-    width: min(90%, 320px);
+    width: min(80%, 320px);
     height: 250px;
   }
 
