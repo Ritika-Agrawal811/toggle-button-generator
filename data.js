@@ -209,6 +209,7 @@ data = {
       "font-size: 1.15rem;",
       "transition: all 300ms ease-in-out;",
       "transition-delay: 100ms;",
+      "font-family:sans-serif;",
       "}",
       ".toggle-btn-3 input[type='checkbox']:checked::before {",
       "width: 100%;",
