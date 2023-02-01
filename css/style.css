@@ -116,8 +116,8 @@ main {
 }
 
 .toggle-container {
-  width: min(90%, 300px);
-  height: 280px;
+  width: min(90%, 250px);
+  height: 250px;
   border-radius: 0.75em;
   margin: 1em;
   box-shadow: 0 0 5px #aaa, 0 0 1em #dedede;
@@ -132,7 +132,7 @@ main {
 }
 
 .row-1 {
-  height: 210px;
+  height: 180px;
 }
 
 .row-2 {
@@ -176,7 +176,7 @@ main {
 .toggle-container.show {
   z-index: 10;
   left: 3em;
-  top: 120px;
+  top: 150px;
   width: 33%;
   height: 430px;
   margin: 0;
