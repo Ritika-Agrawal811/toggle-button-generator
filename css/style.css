@@ -5,10 +5,11 @@ body {
 .container {
   width: min(95%, 1200px);
   margin: 0 auto;
+  border: 1px solid red;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   text-align: center;
   margin: 1em 0;
   position: relative;
@@ -90,7 +91,7 @@ h1 {
   background-color: #efefef;
 }
 .tab-links li {
-  font-size: 1.15rem;
+  font-size: 1rem;
   padding: 0.65em;
   background-color: #efefef;
   cursor: pointer;
@@ -219,7 +220,7 @@ footer ul {
 
 footer ul li {
   margin: 0 1em;
-  font-size: 1.15rem;
+  font-size: 1rem;
   color: #2f4f4f;
   font-weight: 700;
 }
@@ -320,10 +321,10 @@ footer p {
 
   footer ul li {
     margin: 0 0.5em;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
   footer p {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 }
