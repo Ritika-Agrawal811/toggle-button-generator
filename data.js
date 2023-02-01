@@ -273,7 +273,7 @@ data = {
       "background-color: transparent;",
       "transition: all 300ms ease-in-out;",
       "pointer-events: none;",
-      "border: 5px solid #000;",
+      "border: 8px solid #0d4f8b;",
       "border-radius: 50%;",
       "}",
       ".toggle-btn-4 .circle::before {",

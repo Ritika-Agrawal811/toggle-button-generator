@@ -11,6 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -18,7 +24,7 @@
     <link rel="stylesheet" href="css/toggleStyle.css" />
     <title>Toggle Button Generator</title>
   </head>
-  <body>
+  <body theme="light">
     <section class="code-block" id="codeBlock">
       <div id="close-btn"><i class="fa-regular fa-circle-xmark"></i></div>
       <main class="container">
@@ -39,7 +45,7 @@
 
     <main class="container">
       <h1>Toggle Button Generator</h1>
-      <section class="flex-between">
+      <section class="flex-between toggle-row">
         <div
           class="toggle-container light-gray"
           data-toggle-name="toggle-btn-1"
@@ -76,6 +82,20 @@
             <label class="toggle-btn-3 toggle">
               <input type="checkbox" />
               <span class="toggle-text"></span>
+            </label>
+          </div>
+          <div class="row-2 flex-center">
+            <button class="view-btn btn">View Code</button>
+          </div>
+        </div>
+        <div
+          class="toggle-container light-mustard"
+          data-toggle-name="toggle-btn-4"
+        >
+          <div class="flex-center row-1">
+            <label class="toggle-btn-4 toggle">
+              <input type="checkbox" />
+              <span class="circle"></span>
             </label>
           </div>
           <div class="row-2 flex-center">

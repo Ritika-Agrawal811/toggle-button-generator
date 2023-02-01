@@ -1,21 +1,35 @@
+:root {
+  --background-color: #fff;
+}
+
 body {
   font-family: sans-serif;
+}
+
+body[theme="light"] {
+  background-color: var(--background-color);
+}
+
+body[theme="dark"] {
+  --background-color: #000;
 }
 
 .container {
   width: min(95%, 1200px);
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   margin: 1em 0;
   position: relative;
   z-index: 10;
-  color: #7a8b8b;
-  font-weight: 700;
+  color: #7fa1c1;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", cursive;
+  text-shadow: 0 0 1px #000, 0 1px 1px #000, 1px 2px 1px #000, 2px 3px 1px #000,
+    3px 4px 1px #000;
 }
 
 .flex-between {
@@ -115,12 +129,17 @@ main {
   position: relative;
 }
 
+.toggle-row {
+  margin: 1em 0;
+  flex-wrap: wrap;
+}
+
 .toggle-container {
   width: min(90%, 250px);
   height: 250px;
   border-radius: 0.75em;
-  margin: 1em;
-  box-shadow: 0 0 5px #aaa, 0 0 1em #dedede;
+  margin: 1.5em;
+  box-shadow: 0 0 3px #aaa, 0 0 10px #dedede;
   border: 3px solid transparent;
   background-color: #fff;
   transition: border 150ms ease-in-out, width 350ms ease-in-out;
@@ -197,11 +216,12 @@ main {
 
 /*  footer */
 
-footer {
+/* footer {
   position: fixed;
   width: 100%;
   bottom: 0;
-}
+  z-index: 10;
+} */
 
 .footer-row:nth-child(1) {
   background-color: #ddd;
