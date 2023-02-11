@@ -30,6 +30,7 @@ function openCodeBlock(event) {
   toggleContainer = event.target.offsetParent;
 
   codeBlock.classList.add("open");
+  document.body.classList.add("max-height");
   toggleContainer.classList.add("show");
   toggleName = toggleContainer.getAttribute("data-toggle-name");
   showCode("html", toggleName);
