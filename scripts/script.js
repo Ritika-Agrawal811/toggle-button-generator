@@ -79,26 +79,6 @@ function showCode(codeType, toggleName) {
   }
 }
 
-// function to format code
-
-function formatCode(codeContent) {
-  let code = "";
-  for (let i = 0; i < codeContent.length; i++) {
-    if (
-      codeContent[i] == ">" ||
-      codeContent[i] == "{" ||
-      codeContent[i] == "}" ||
-      codeContent[i] == ";"
-    ) {
-      code = code + codeContent[i] + "\n";
-    } else {
-      code = code + codeContent[i];
-    }
-  }
-
-  return code;
-}
-
 // function to copy code
 
 const copyToClipboard = (str) => {
@@ -110,11 +90,7 @@ const copyToClipboard = (str) => {
 };
 
 function copyCodeBlock() {
-  let codeContent = toggleCode.textContent;
-
-  codeContent = formatCode(codeContent);
-
-  if (copyToClipboard(codeContent)) {
+  if (copyToClipboard(toggleCode.textContent)) {
     alert("code copied successfully!");
   }
 }
