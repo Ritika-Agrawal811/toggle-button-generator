@@ -23,18 +23,49 @@ copyBtn.addEventListener("click", copyCodeBlock);
 
 /* ---- functions ------- */
 
+// function to hide underneath elements for modal to display correctly
+
+function showBehindElements() {
+  let footer = document.getElementById("pageFooter");
+  let toggleArray = document.getElementsByClassName("toggle-container");
+
+  for (let i = 0; i < toggleArray.length; i++) {
+    toggleArray[i].classList.remove("hide");
+  }
+
+  footer.classList.remove("hide");
+}
+
+// function to hide underneath elements for modal to display correctly
+
+function hideBehindElements(currentToggleCount) {
+  let footer = document.getElementById("pageFooter");
+  let toggleArray = document.getElementsByClassName("toggle-container");
+
+  for (let i = 0; i < toggleArray.length; i++) {
+    let toggleCount = toggleArray[i].getAttribute("toggle-count");
+
+    if (currentToggleCount !== toggleCount) {
+      toggleArray[i].classList.add("hide");
+    }
+  }
+
+  footer.classList.add("hide");
+}
+
 //  funtion to open the code container
 let toggleContainer;
 let toggleName;
 function openCodeBlock(event) {
   toggleContainer = event.target.offsetParent;
+  let toggleCount = toggleContainer.getAttribute("toggle-count");
 
   codeBlock.classList.add("open");
-  document.body.classList.add("max-height");
   toggleContainer.classList.add("show");
   toggleName = toggleContainer.getAttribute("data-toggle-name");
-  showCode("html", toggleName);
 
+  hideBehindElements(toggleCount);
+  showCode("html", toggleName);
   resetTab();
 }
 
@@ -50,6 +81,8 @@ function resetTab() {
 function closeCodeBlock(event) {
   codeBlock.classList.remove("open");
   toggleContainer.classList.remove("show");
+
+  showBehindElements();
 }
 
 // function to select tab
