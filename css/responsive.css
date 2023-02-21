@@ -26,7 +26,8 @@
 }
 
 @media (max-width: 768px) {
-  .flex-between {
+  .flex-wrap {
+    justify-content: center;
     flex-direction: column;
   }
 

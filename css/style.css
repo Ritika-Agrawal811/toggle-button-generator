@@ -32,9 +32,9 @@ h1 {
     3px 4px 1px #000;
 }
 
-.flex-between {
+.flex-wrap {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 

@@ -363,7 +363,6 @@
   background-color: #cdd0d0;
   transition: all 150ms ease-in-out;
   outline: none;
-  overflow: hidden;
 }
 
 .toggle-btn-6 .circle {
@@ -402,4 +401,68 @@
 .toggle-btn-6 input[type="checkbox"]:checked ~ .circle::before {
   content: "ON";
   color: #4cbb17;
+}
+
+/* toggle button 7 */
+
+.toggle-btn-7 {
+  width: 100px;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.toggle-btn-7 input[type="checkbox"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100vmax;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  background-color: #f2f3f3;
+  transition: all 250ms ease-in-out;
+  outline: none;
+}
+
+.toggle-btn-7 .circle {
+  position: absolute;
+  width: 45%;
+  height: 150%;
+  top: 50%;
+  left: -5%;
+  transform: translateY(-50%);
+  border-radius: 100vmax;
+  background-color: #871f78;
+  box-shadow: 0 2px 5px #696969;
+  transition: all 250ms ease-in-out;
+  pointer-events: none;
+}
+
+.toggle-btn-7 .circle::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #f2f3f3;
+  border-radius: 100vmax;
+  transition: all 250ms ease-in-out;
+}
+
+.toggle-btn-7 input[type="checkbox"]:checked {
+  background-color: #871f78;
+}
+
+.toggle-btn-7 input[type="checkbox"]:checked ~ .circle {
+  background-color: #f2f3f3;
+  left: 60%;
+}
+
+.toggle-btn-7 input[type="checkbox"]:checked ~ .circle::before {
+  width: 50%;
+  border: 5px solid #871f78;
 }
