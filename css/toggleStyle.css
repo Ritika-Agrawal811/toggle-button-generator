@@ -13,7 +13,7 @@
   height: 100%;
   border-radius: 30px;
   box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2),
-    -10px -10px 20px 0 rgba(255, 255, 255, 0.5);
+    -10px -10px 20px 0 rgba(255, 255, 255, 0.6);
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -48,7 +48,7 @@
 
 .toggle-btn-1 input[type="checkbox"]:checked {
   box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
-    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.6);
 }
 
 .toggle-btn-1 input[type="checkbox"]:checked ~ .circle {
@@ -271,7 +271,7 @@
   background-color: #0d4f8b;
 }
 
-/* toggle button 5 */
+/* toggle button 6 */
 
 .toggle-btn-5 {
   width: 150px;
@@ -340,4 +340,66 @@
 
 .toggle-btn-5 input[type="checkbox"]:checked ~ .right-circle {
   background: #fff;
+}
+
+/* toggle button 6 */
+
+.toggle-btn-6 {
+  width: 100px;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.toggle-btn-6 input[type="checkbox"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100vmax;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  background-color: #cdd0d0;
+  transition: all 150ms ease-in-out;
+  outline: none;
+  overflow: hidden;
+}
+
+.toggle-btn-6 .circle {
+  position: absolute;
+  width: 55%;
+  height: 135%;
+  top: 50%;
+  left: -5%;
+  transform: translateY(-50%);
+  border-radius: 100vmax;
+  background-color: #7a8b8b;
+  box-shadow: 0 2px 5px #696969;
+  transition: all 150ms ease-in-out;
+  pointer-events: none;
+}
+
+.toggle-btn-6 .circle::before {
+  content: "OFF";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  color: #f2f3f3;
+}
+
+.toggle-btn-6 input[type="checkbox"]:checked {
+  background-color: #49e20e;
+}
+
+.toggle-btn-6 input[type="checkbox"]:checked ~ .circle {
+  background-color: #f2f3f3;
+  left: 50%;
+}
+
+.toggle-btn-6 input[type="checkbox"]:checked ~ .circle::before {
+  content: "ON";
+  color: #4cbb17;
 }
