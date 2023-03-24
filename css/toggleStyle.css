@@ -529,5 +529,5 @@
 
 .toggle-btn-8 input[type="checkbox"]:checked ~ .circle {
   background-color: #ff5f01;
-  left: calc(50% - 34px);
+  left: calc(50% - 36px);
 }

@@ -602,7 +602,7 @@ data = {
       "}\n",
       '.toggle-btn input[type="checkbox"]:checked ~ .circle {\n',
       "&nbsp;&nbsp; background-color: #ff5f01;\n",
-      "&nbsp;&nbsp; left: calc(50% - 34px);\n",
+      "&nbsp;&nbsp; left: calc(50% - 36px);\n",
       "}\n",
     ],
   },
